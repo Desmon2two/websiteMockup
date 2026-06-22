@@ -4,9 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Films</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <t-header></t-header>
+    <a href="filmExample.html">
+      <t-hook
+      filmCover=""
+filmTitle="Arcane"
+filmDescrition="One of the most precious pictures of our time"
+filmRating="10/10"
+filmYear="2024"
+      ></t-hook>
+      <!-- <section class="hook flex bordered">
+        <div class="hook__icon-left"></div>
+        <div class="hook__icon-right"></div>
+        <img src="hook.img" alt="hook-vidOrImg" class="hook__img" />
+        <div class="hook__info flex rounded bordered">
+          <h2 class="info__film-title">title</h2>
+          <p class="info__film-rating">year + rating</p>
+          <div class="info__film-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              quas nihil magnam aliquid sunt at! Non dolores, aliquam
+              consequuntur itaque inventore fugiat quidem eveniet earum quisquam
+              animi! Iusto, mollitia hic.
+            </p>
+          </div>
+          <!-- <div class="info__film-year">
+            <p>year</p>
+          </div>
+          <div class="info__film-watch-count">
+            <p>watch-count</p>
+          </div> -->
+        </div>
+      </section> -->
+    </a>
+    <section class="filters">
+      <!-- Make a dropdown choosing vindow -->
+      <input type="number" class="filters__how-much-to-load-on-one-page" />
+    </section>
+    <section class="film-library flex">
+      <t-film-card
+        filmCover=""
+        ;
+        filmTitle="Hellboy"
+        filmRating="7/10"
+        filmYear="2002"></t-film-card>
+      <t-film-card
+        filmCover=""
+        ;
+        filmTitle="Witcher the serial and some other stuff and something extremely cool other then that"
+        filmRating="3/10"
+        filmYear="2024"></t-film-card>
+      <t-film-card
+        filmCover=""
+        ;
+        filmTitle="Harry Potter and new beginnings"
+        filmRating="9/10"
+        filmYear="2015"></t-film-card>
+      <t-film-card
+        filmCover=""
+        ;
+        filmTitle="Devil wears Prada 2"
+        filmRating="3/10"
+        filmYear="2026"></t-film-card>
+      <t-film-card
+        filmCover=""
+        ;
+        filmTitle="Kung-fu Panda"
+        filmRating="10/10"
+        filmYear="2007"></t-film-card>
+      <t-film-card
+        filmCover=""
+        ;
+        filmTitle="Awawawawatar: Way of the Water"
+        filmRating="3/10"
+        filmYear="2026"></t-film-card>
+    </section>
+    <div class="page-nav">
+      <a href=""><<</a>
+      <a href=""><</a>
+      <!-- in js connect each element individually and update href and number indicator -->
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">></a>
+      <a href="">>></a>
+    </div>
+    <section class="footer"></section>
     <script src="blocks-creator.js"></script>
     <script src="index.js"></script>
   </body>

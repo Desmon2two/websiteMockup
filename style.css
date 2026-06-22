@@ -26,7 +26,7 @@ html {
 }
 @font-face {
   font-family: "Roboto Slab";
-  src: url(/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+  src: url(RobotoSlab-VariableFont_wght.ttf);
 }
 body {
   text-wrap: balance;
@@ -35,17 +35,20 @@ body {
   color: var(--color-primary);
   font-family: "Roboto Slab", sans-serif;
 }
-section{
+section {
   max-width: 1080px;
   margin: 0 auto;
 }
 p {
+  color: var(--color-primary);
   font: var(--p);
 }
 h1 {
+  color: var(--color-primary);
   font: var(--h1);
 }
 h2 {
+  color: var(--color-primary);
   font: var(--h2);
 }
 button,
@@ -137,4 +140,127 @@ img {
 }
 .margin7 {
   margin: var(--spacing7) auto;
+}
+/*  
+*/
+.header {
+  height: 8vh;
+  background-color: var(--color-primary);
+}
+.header__search-bar {
+  flex-basis: 70%;
+  height: 3vh;
+}
+.header__dropdown-menu {
+  flex-basis: 20%;
+}
+.search-bar__zoom-icon {
+  justify-self: right;
+  padding-right: var(--spacing1);
+}
+.hook {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  justify-content: left;
+}
+.hook__icon-left {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  background-color: var(--color-primary);
+}
+.hook__icon-right {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  background-color: var(--color-primary);
+}
+.hook__info {
+  height: 30%;
+  width: 65%;
+  justify-self: normal;
+  align-self: flex-end;
+  margin: 0 0 var(--spacing2) var(--spacing2);
+  padding: var(--spacing2);
+  row-gap: 1.5vh;
+}
+.info__film-title {
+  flex-basis: 40%;
+  text-align: left;
+}
+.info__film-rating {
+  flex-basis: 45%;
+  text-align: right;
+}
+.info__film-description {
+  flex-basis: 100%;
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.filters{
+  margin: var(--spacing2) 0;
+}
+
+.film-library{
+  margin-top: var(--spacing2);
+column-gap: 5vw;
+row-gap: 2vh;
+}
+.film-card{
+  width: 45vw;
+  height: 15vh;
+  row-gap: var(--spacing1);
+}
+.film-card__title{
+  flex-basis: 100%;
+  text-align: center;
+  align-self:flex-end;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.page-nav{
+  text-align: center;
+}
+
+/* Films Pages */
+
+.full-info{
+
+}
+.full-info__poster{
+  flex-basis: 25%;
+  height: 10vh;
+  justify-self: start;
+}
+.full-info__description{
+  flex-basis: 60%;
+  height: fit-content;
+}
+.view-screen{
+  margin: var(--spacing5);
+  height: 35vh;
+  width: 90%;
+  justify-self: center;
+}
+
+.comment-section{
+  width: 95%;
+  height: fit-content;
+  justify-content: center;
+  padding: var(--spacing2);
+  flex-direction: row;
+}
+.comment-section__comment{
+  flex-basis: 100%;
 }

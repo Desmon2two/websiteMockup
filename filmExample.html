@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Example Page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <t-header></t-header>
+    <t-hook
+      filmCover=""
+      filmTitle="Arcane"
+      filmDescrition="One of the most precious pictures of our time"
+      filmRating="10/10"
+      filmYear="2024"></t-hook>
+    <section class="full-info flex">
+      <div class="full-info__poster">
+        <img src="poster.img" alt="Movie Poster Picture" />
+      </div>
+      <div class="full-info__description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          quod ut ab cupiditate quia, saepe nesciunt et, voluptate veniam libero
+          aperiam sunt ducimus, eaque dolorum.
+        </p>
+      </div>
+    </section>
+    <section class="view-screen bordered">
+      <video src="film_itself.mp4"></video>
+    </section>
+    <section class="comment-section flex bordered">
+      <div class="comment-section__comment">
+        <div class="comment__author"><h2>Test Author</h2></div>
+        <div class="comment__text">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+            nam quas modi, sapiente rem beatae molestiae obcaecati quos veniam?
+            Laboriosam maiores odit illo vel quidem reprehenderit consequuntur
+            at adipisci? Officiis numquam fuga deserunt nisi quod suscipit quam
+            quo minima. Fuga, eius dolore. Delectus error, aperiam a
+            exercitationem voluptatum vitae doloribus.
+          </p>
+        </div>
+      </div>
+      <div class="comment-section__comment">
+        <div class="comment__author"><h2>Test Author</h2></div>
+        <div class="comment__text"><p>Test Text</p></div>
+      </div>
+      <div class="comment-section__comment">
+        <div class="comment__author"><h2>Test Author</h2></div>
+        <div class="comment__text"><p>Test Text</p></div>
+      </div>
+      <div class="comment-section__comment">
+        <div class="comment__author"><h2>Test Author</h2></div>
+        <div class="comment__text"><p>Test Text</p></div>
+      </div>
+    </section>
+    <section class="footer"></section>
+    <script src="blocks-creator.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
