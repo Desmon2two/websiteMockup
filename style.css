@@ -1,0 +1,140 @@
+:root {
+  /* Color palette tokens */
+  --color-primary: rgb(255, 255, 255);
+  --color-secondary: rgb(30, 26, 47);
+  --color-accent: dodgerblue;
+
+  /* Border */
+  --border-radius: 7px;
+  --border-color: black;
+
+  /* Font-sizes */
+  --p: 1rem/1.5em;
+  --h1: 600 3rem/1.2em;
+  --h2: 600 2rem/1.2em;
+  /* Layout Spacing Tokens */
+  --spacing1: 4px;
+  --spacing2: 8px;
+  --spacing3: 16px;
+  --spacing4: 20px;
+  --spacing5: 40px;
+  --spacing6: 80px;
+  --spacing7: 160px;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+body {
+  text-wrap: balance;
+  font: var(--p);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-family: "Roboto Slab", sans-serif;
+}
+section{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+p {
+  font: var(--p);
+}
+h1 {
+  font: var(--h1);
+}
+h2 {
+  font: var(--h2);
+}
+button,
+.btn {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  font: var(--p);
+  cursor: pointer;
+}
+.btn:hover,
+button:hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-secondary),
+    var(--color-accent)
+  );
+  transition: 0.3s ease-in-out;
+}
+img {
+  width: 100%;
+}
+/* UTILITY CLASSES */
+.hidden {
+  display: none;
+}
+.rounded {
+  border-radius: var(--border-radius);
+}
+.bordered {
+  border: 1px solid var(--border-color);
+}
+.centered {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing4);
+  flex-wrap: wrap;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.padding1 {
+  padding: var(--spacing1) 0;
+}
+.padding2 {
+  padding: var(--spacing2) 0;
+}
+.padding3 {
+  padding: var(--spacing3) 0;
+}
+.padding4 {
+  padding: var(--spacing4) 0;
+}
+.padding5 {
+  padding: var(--spacing5) 0;
+}
+.padding6 {
+  padding: var(--spacing6) 0;
+}
+.padding7 {
+  padding: var(--spacing7) 0;
+}
+
+.margin1 {
+  margin: var(--spacing1) auto;
+}
+.margin2 {
+  margin: var(--spacing2) auto;
+}
+.margin3 {
+  margin: var(--spacing3) auto;
+}
+.margin4 {
+  margin: var(--spacing4) auto;
+}
+.margin5 {
+  margin: var(--spacing5) auto;
+}
+.margin6 {
+  margin: var(--spacing6) auto;
+}
+.margin7 {
+  margin: var(--spacing7) auto;
+}
